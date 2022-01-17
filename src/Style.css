@@ -1,0 +1,58 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: rgb(167, 167, 167);
+  overflow: scroll;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headings {
+  background-color: rgba(4, 196, 255, 0.6);
+  height: 8vh;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 1px black;
+}
+.input-bar {
+  height: 5vh;
+  width: 30vw;
+}
+.filter-box {
+  background-color: rgb(226, 226, 226, 0.5);
+  width: 40vw;
+  height: 80vh;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 1px black;
+}
+
+/* Here is style for info */
+.info-heading {
+  height: 5vh;
+  width: 38vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flag {
+  height: 10vh;
+  width: 10vw;
+}
+.btn-name {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
