@@ -151,3 +151,63 @@
   color: white;
   cursor: pointer;
 }
+@media only screen and (max-width: 500px) {
+  .frame {
+    height: 100vh;
+    width: 100vw;
+  }
+  .container h1 {
+    width: 50vw;
+  }
+  .form {
+    width: 80vw;
+    height: 25vh;
+  }
+  .form input {
+    width: 60vw;
+  }
+  .main {
+    height: 70vh;
+    width: 90vw;
+  }
+  .filter-container {
+    height: 70vh;
+    width: 80vw;
+  }
+  .info-container {
+    width: 80vw;
+    height: 70vh;
+    flex-direction: column-reverse;
+  }
+  .info {
+    background-color: rgb(206, 212, 253, 0.1);
+    box-shadow: none;
+    width: 77vw;
+    height: 50vh;
+  }
+  .flags {
+    padding: 5% 0% 0% 2%;
+    height: 20vh;
+    width: 35vw;
+  }
+  .name {
+    width: 70vw;
+  }
+  .results {
+    width: 70vw;
+  }
+  .icon {
+    width: 35vw;
+    height: 20vh;
+  }
+  .show {
+    width: 80vw;
+  }
+  .list {
+    width: 25vh;
+    font-size: 14px;
+  }
+  .show-btn {
+    width: 12vw;
+  }
+}
