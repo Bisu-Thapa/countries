@@ -17,13 +17,13 @@ const CountriesInfo = ({ matchedNames, allData }) => {
   };
 
   return (
-    <div>
+    <div className="show">
       {isBtnClicked ? (
         <Info matchForOne={country.val} matchedNames={country.name} />
       ) : (
         matchedNames.map((name) => (
-          <li key={name}>
-            {name} <button onClick={() => handleShowBtn(name)}>Show</button>
+          <li key={name} className="list">
+            {name} <button onClick={() => handleShowBtn(name)} className="show-btn">Show</button>
           </li>
         ))
       )}

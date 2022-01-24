@@ -14,7 +14,6 @@ const App = () => {
 
   return (
     <Fragment>
-      <h1>Countries Info</h1>
       <Form length={allData.length} allData={allData} />
     </Fragment>
   );

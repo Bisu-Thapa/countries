@@ -16,7 +16,7 @@ const FilterList = ({ allData, typedName }) => {
 
   // Using ternary statement and returning values
   return (
-    <div>
+    <div className="filter-container">
       {typedName === "" ? (
         <ol>{defaultList}</ol>
       ) : matchedNames.length > 10 ? (

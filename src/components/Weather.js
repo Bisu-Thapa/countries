@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./Style.css";
 
 const Weather = ({ capitalCity }) => {
   const my_api = process.env.REACT_APP_MY_API_KEY;
@@ -30,15 +31,16 @@ const Weather = ({ capitalCity }) => {
 
   return (
     <div>
-      <p>
-        <strong>Temperature: </strong>
-        {weatherData.temp} Celsius
-      </p>
-      <img alt="Weather icon" src={weatherData.icon} />
-      <p>
-        <strong>Wind: </strong>
-        {weatherData.speed} mph
-      </p>
+      <div className="results">
+        <h4>Temperature:</h4>
+        <p>{weatherData.temp} celsius</p>
+      </div>
+
+      <div className="results">
+        <h4>Wind:</h4>
+        <p>{weatherData.speed} mph</p>
+      </div>
+      <img alt="Weather icon" src={weatherData.icon} className="icon" />
     </div>
   );
 };
