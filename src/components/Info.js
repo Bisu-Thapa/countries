@@ -22,7 +22,7 @@ const Info = ({ matchForOne, matchedNames }) => {
 
   return (
     <div>
-      <h1 className="info-heading">{matchedNames}</h1>
+      <h1>{matchedNames}</h1>
       <div>{flags}</div>
       <div>{capital}</div>
       <div>{population}</div>

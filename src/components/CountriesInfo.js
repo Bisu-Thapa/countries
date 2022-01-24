@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Info from "./Info";
-import "./Style.css";
 
 const CountriesInfo = ({ matchedNames, allData }) => {
   const [isBtnClicked, setIsBtnClicked] = useState(false);
@@ -23,7 +22,7 @@ const CountriesInfo = ({ matchedNames, allData }) => {
         <Info matchForOne={country.val} matchedNames={country.name} />
       ) : (
         matchedNames.map((name) => (
-          <li key={name} className="btn-name">
+          <li key={name}>
             {name} <button onClick={() => handleShowBtn(name)}>Show</button>
           </li>
         ))

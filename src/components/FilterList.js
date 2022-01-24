@@ -1,7 +1,6 @@
 import React from "react";
 import CountriesInfo from "./CountriesInfo";
 import Info from "./Info";
-import "./Style.css";
 
 const FilterList = ({ allData, typedName }) => {
   // Accessing countries info and storing it to variables
@@ -17,7 +16,7 @@ const FilterList = ({ allData, typedName }) => {
 
   // Using ternary statement and returning values
   return (
-    <div className="filter-box">
+    <div>
       {typedName === "" ? (
         <ol>{defaultList}</ol>
       ) : matchedNames.length > 10 ? (
