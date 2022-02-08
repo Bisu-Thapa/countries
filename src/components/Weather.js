@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import "./Style.css";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './Style.css';
 
 const Weather = ({ capitalCity }) => {
   const my_api = process.env.REACT_APP_MY_API_KEY;
   // Declaring useState variable to get data from API
   const [weatherData, setWeatherData] = useState({
-    temp: "",
-    speed: "",
-    icon: "",
+    temp: '',
+    speed: '',
+    icon: '',
   });
   // Using useEffect to get data from API
   useEffect(() => {
@@ -32,13 +32,13 @@ const Weather = ({ capitalCity }) => {
   return (
     <div>
       <div className="results">
-        <h4>Temperature:</h4>
-        <p>{weatherData.temp} celsius</p>
+        <h3>Temperature:</h3>
+        <h3>{weatherData.temp} celsius</h3>
       </div>
 
       <div className="results">
-        <h4>Wind:</h4>
-        <p>{weatherData.speed} mph</p>
+        <h3>Wind:</h3>
+        <h3>{weatherData.speed} mph</h3>
       </div>
       <img alt="Weather icon" src={weatherData.icon} className="icon" />
     </div>

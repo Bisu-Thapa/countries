@@ -1,6 +1,6 @@
-import React from "react";
-import Weather from "./Weather";
-import "./Style.css";
+import React from 'react';
+import Weather from './Weather';
+import './Style.css';
 
 const Info = ({ matchForOne, matchedNames }) => {
   const flags = matchForOne.map((one) => (
@@ -23,24 +23,34 @@ const Info = ({ matchForOne, matchedNames }) => {
   const capitalCity = matchForOne.map((one) => one.capital);
 
   return (
-    <div className="info-container">
-      <div className="info">
-        <h3 className="name">{matchedNames}</h3>
-        <div className="results">
-          <h4>Capital:</h4>
-          {capital}
-        </div>
-        <div className="results">
-          <h4>Population:</h4>
-          {population}
-        </div>
-        <h4>Languages</h4>
-        <span>{languages}</span>
-        <h3>Weather in {capitalCity}</h3>
+    <section className="info-container">
+      <span className="flag-wrapper">
+        <h1>{matchedNames}</h1>
+        {flags}
+      </span>
+
+      <div className="basic">
+        <span className="capital-population">
+          <h2>Capital:</h2>
+          <h3>{capital}</h3>
+        </span>
+
+        <span className="capital-population">
+          <h2>Population:</h2>
+          <h3>{population}</h3>
+        </span>
+      </div>
+
+      <div className="language">
+        <h2>Languages:</h2>
+        <h3>{languages}</h3>
+      </div>
+
+      <div className="weather">
+        <h2>Weather in {capitalCity}</h2>
         <Weather capitalCity={capitalCity} />
       </div>
-      <span>{flags}</span>
-    </div>
+    </section>
   );
 };
 

@@ -1,13 +1,13 @@
-import React, { useState, useEffect, Fragment } from "react";
-import axios from "axios";
-import Form from "./components/Form";
+import React, { useState, useEffect, Fragment } from 'react';
+import axios from 'axios';
+import Form from './components/Form';
 
 const App = () => {
   const [allData, setAllData] = useState([]);
 
   // Getting data from server
   useEffect(() => {
-    axios.get("https://restcountries.com/v3.1/all").then((response) => {
+    axios.get('https://restcountries.com/v3.1/all').then((response) => {
       setAllData(response.data);
     });
   }, []);
